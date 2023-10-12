@@ -1,0 +1,359 @@
+.post-content{
+    border-top: solid rgb(40,43,45) 0.5px ;
+    margin-top: 10px ;
+    width: 598px ;
+    transition: 0s ;
+}
+
+.post-template{
+    cursor: pointer ;
+    background-color: black ;
+    padding-left: 14px ;
+    padding-right: 10px ;
+    padding-top: 10px ;
+    border-bottom: solid rgb(40,43,45) 0.5px ;
+}
+
+.post-template:hover{
+    background-color: rgb(6, 6, 6) ;
+}
+
+.post-profile-picture{
+    height: 3rem ;
+    width: 3rem ;
+    border-radius: 1.5rem ;
+    margin-right: 15px ;
+}
+
+.user-info{
+    display: flex ;
+}
+
+.specifications{
+    display: flex ;
+    align-items: center ;
+    width: 518px ;
+    position: relative ;
+}
+
+.users-name{
+    font-weight: 500 ;
+    font-size: 15px ;
+    margin-right: 8px ;
+}
+
+.users-handle{
+    font-size: 15px ;
+    color: rgb(85,89,93) ;
+}
+
+.post-profile-picture{
+    object-fit: cover ;
+}
+
+.follow-btn{
+    cursor: pointer ;
+    transition: 0s ;
+    position: absolute ;
+    right: 0px ;
+    padding: 2px 4px ;
+    border: none ;
+    background-color: rgb(63,68,238)  ;
+    font-size: 13px ;
+    transition: border-radius 0.15s ;
+    border-radius: 0px ;
+}
+
+.follow-btn:hover{
+    border-radius: 4px ;
+}
+
+.followed{
+    border: solid 2px rgb(63,68,238)  ;
+    background-color: white ;
+    color: rgb(63,68,238)  ;
+}
+
+.caption{
+    padding-left: 3rem ;
+    margin-top: -2rem ;
+}
+
+.post-caption{
+    margin-left: 15px ;
+    font-size: 16px ;
+}
+
+.post-media{
+    padding-top: 0.4rem ;
+    padding-left: 3rem ;
+}
+
+.post-media-img{
+    margin-left: 15px ;
+    width: 31rem ;
+    border-radius: 8px ;
+    cursor: pointer ;
+    height: 30rem ;
+    object-fit: cover ;
+}
+
+.adjust-img{
+    position: fixed ;
+    top: 8rem ;
+}
+
+.post-tags{
+    padding-left: 4.2rem ;
+}
+
+.post-tags a{
+    text-decoration: none ;
+    font-size: 14px ;
+    color: rgb(63,68,238) ;
+}
+.post-tags a:hover{
+    color: white ;
+}
+
+.post-interactions{
+    display: flex ;
+    padding-left: 4.2rem ;
+    padding-top: 0.5rem ;
+}
+
+.interaction-template{
+    display: flex ;
+    margin-right: 4rem ;
+    align-items: center ;
+    font-size: 1rem ;
+}
+
+.like-btn, .comment-btn, .save-btn{
+    margin-right: 1rem ;
+    background: none ;
+    border: none ;
+    font-size: 1.2rem ;
+    cursor: pointer ;
+}
+
+.like-btn i:hover, .comment-btn i:hover, .save-btn i:hover, .comment-button i:hover{
+    color: rgba(93, 98, 248, 0.489) ;
+}
+
+.liked, .saved{
+    color: rgb(63,68,238) ;
+}
+
+.comment-box{
+    padding-left: 4.1rem ;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem ;
+}
+
+.my-comment{
+    display: flex ;
+    align-items: center ;
+    padding-bottom: 0.5rem ;
+}
+
+.user-comment-profile{
+    width: 2rem ;
+    height: 2rem ;
+    border-radius: 1rem ;
+    margin-right: 0.5rem ;
+}
+
+.comment-input{
+    padding-left: 0.5rem ;
+    color: white ;
+    margin-right: 0.5rem ;
+    flex: 1 ;
+    height: 1.6rem ;
+    font-size: 14px ;
+    border: solid rgb(40,43,45) 0.5px ;
+    background-color: black ;
+    padding: 0.5rem ;
+}
+
+.comment-input:focus{
+    outline: none ;
+}
+
+.comment-button{
+    background: none ;
+    border: none ;
+    cursor: pointer ;
+    font-size: 15px ;
+}
+
+.comment-template{
+    display: flex ;
+    flex-direction: column ;
+    margin-bottom: 0.5rem ;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.1) ;
+    padding-left: 0.5rem ;
+    position: relative ;
+    margin-top: 0.5rem ;
+}
+
+.comment-header-left{
+    display: flex ;
+    align-items: start ;
+}
+
+.commenters-pp{
+    width: 2rem ;
+    height: 2rem ;
+    border-radius: 1rem ;
+    margin-right: 0.5rem ;
+}
+
+.commenters-info{
+    display: flex ;
+    font-size: 14px ;
+    font-weight: 500 ;
+}
+
+.commenters-handle{
+    font-weight: 400 ;
+    margin-left: 6px ;
+    color: rgb(85,89,93) ;
+}
+
+.comment{
+    padding-left: 2rem ;
+    margin-top: -0.8rem ;
+}
+
+.actual-comment{
+    margin-left: 0.5rem ;
+}
+
+.comment-reaction{
+    display: flex ;
+    padding-left: 2.6rem ;
+    padding-top: 0.2rem ;
+}
+
+.upvote-btn, .downvote-btn{
+    background: none ;
+    border: none ;
+    margin-right: 0.5rem ;
+    cursor: pointer ;
+}
+
+.vote-box{
+    display: flex ;
+    align-items: center ;
+    margin-right: 0.7rem ;
+}
+
+.delete-comment-btn{
+    background: none ;
+    border: none ;
+    position: absolute ;
+    right: 0.5rem ;
+    top: 0.5rem ;
+    cursor: pointer ;
+}
+
+.delete-comment-btn img{
+    width: 1rem ;
+}
+
+@media(max-width: 884px){
+    .like-btn, .comment-btn, .save-btn{
+        margin-right: 0.5rem ;
+        background: none ;
+        border: none ;
+        font-size: 1.2rem ;
+        cursor: pointer ;
+    }
+
+    .interaction-template{
+        display: flex ;
+        margin-right: 4rem ;
+        align-items: center ;
+        font-size: 0.4rem ;
+    }
+
+    .interaction-template{
+        display: flex ;
+        margin-right: 0.8rem ;
+        align-items: center ;
+        font-size: 0.8rem ;
+    }
+
+    .post-content{
+        width: 100vw ;
+    }
+
+    .specifications{
+        position: static ;
+    }
+
+    .specifications{
+        width: 200px ;
+    }
+
+    .follow-btn{
+        position: absolute ;
+        right: 1vw ;
+        cursor: pointer ;
+    }
+
+    .users-name{
+        font-weight: 500 ;
+        font-size: 14px ;
+        margin-right: 8px ;
+        max-width: 20rem ;
+    }
+    
+    .users-handle{
+        font-size: 14px ;
+        color: rgb(85,89,93) ;
+    }
+
+    .follow-btn{
+        padding: 2px 4px ;
+        font-size: 13px ;
+    }
+
+    .caption{
+        padding-left: 3rem ;
+        margin-top: -2rem ;
+    }
+
+    .post-media-img{
+        margin-left: 15px ;
+        width: 75vw ;
+        border-radius: 8px ;
+        cursor: pointer ;
+        height: 25rem ;
+        object-fit: cover ;
+    }
+
+    .liked{
+        color: rgb(63,68,238) ;
+    }
+}
+
+@media(max-width: 338px){
+    .interaction-template{
+        display: flex ;
+        margin-right: 0.8rem ;
+        align-items: center ;
+        font-size: 0.6rem ;
+    }
+
+    .follow-btn{
+        font-size: 0.6rem ;
+    }
+}
+
+@media(max-width: 324px){
+    .follow-btn{
+        opacity: 0 ;
+    }
+}

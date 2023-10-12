@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/signup-and-login.css">
+</head>
+<body>
+    <div class="app">
+        <div class="login-header">
+            <div class="logo-div">
+                <img src="images and Icons/app-logo.png" alt="logo" class="logo-login">
+            </div>
+            <p class="log-header">Login</p>
+        </div>
+
+        <form class="js-login-form log-form" method="get">
+            <div class="user-email-box">
+                <input type="text" name="email" placeholder="@handle" class="js-email-or-name-input-login log-input-box" required>
+                <p class="js-check-email-or-name-box-login error-box"></p>
+            </div>
+            <div class="user-password-box">
+                <input type="password" name="password" placeholder="Password" class="js-password-input-login log-input-box" required>
+                <p class="js-check-password-box error-box"></p>
+            </div>
+            <input type="submit" value="Login" class="log-button">
+            <div class="go-to-login">
+                <p>Don't have an account? <a href="sign-up.html" class="redirect" target="_self">Create account</a></p>
+            </div>
+        </form>
+        
+        <div class="error">
+            <p class="js-error-message"></p>
+        </div>
+    </div>
+
+    <script src="scripts/login.js" type="module"></script>
+</body>
+</html>

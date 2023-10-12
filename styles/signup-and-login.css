@@ -1,0 +1,135 @@
+.app{
+    width: 450px ;
+    display: flex ;
+    align-items: center ;
+    flex-direction: column ;
+    box-shadow: 0.5px 0.5px 5px rgba(255, 255, 255, 0.1) ;
+    border-radius: 5px ;
+    padding-bottom: 40px ;
+}
+
+.logo-login{
+    width: 80px ;
+}
+
+.logo-div{
+    width: 100% ;
+    display: flex ;
+    justify-content: start ;
+    padding-top: 10px ;
+    padding-left: 10px ;
+}
+
+.login-header{
+    width: 100% ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+.log-header{
+    font-weight: 600 ;
+    font-size: 35px ;
+}
+
+.log-form{
+    width: 100% ;
+    margin-top: 10px ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+.log-input-box{
+    width: 400px ;
+    height: 45px ;
+    border-radius: 2px ;
+    font-size: 16px ;
+    padding-left: 10px ;
+    margin-top: 5px ;
+    color: black ;
+    border: none ;
+}
+
+.log-input-box:focus{
+    outline: none ;
+}
+
+.error-box{
+    height: 15px ;
+    font-size: 14px ;
+}
+
+.log-button{
+    width: 400px ;
+    height: 45px ;
+    cursor: pointer ;
+    background-color: rgb(63,68,238) ;
+    border: none ;
+    border-radius: 2px ;
+    font-size: 18px ;
+    font-weight: 500 ;
+}
+
+.log-button:hover{
+    background-color: white ;
+    border: solid 2px rgb(63,68,238) ;
+    color: rgb(63,68,238) ;
+}
+
+.go-to-login{
+    margin-top: 15px ;
+}
+
+.redirect{
+    text-decoration: none ;
+    color: rgb(1,113,211) ;
+}
+
+@media(max-width: 652px){
+    .app{
+        width: 100vw ;
+        height: 100vh ;
+        display: flex ;
+        align-items: center ;
+        flex-direction: column ;
+        box-shadow: 0.5px 0.5px 5px rgba(255, 255, 255, 0.0) ;
+        border-radius: 0px ;
+        padding-top: 20px ;
+        padding-bottom: 0px ;
+    }
+
+    .log-header{
+        font-weight: 600 ;
+        font-size: 30px ;
+    }
+
+    .log-form{
+        width: 100vw ;
+        margin-top: 10px ;
+        display: flex ;
+        flex-direction: column ;
+        align-items: center ;
+    }
+
+    .log-input-box{
+        width: 85vw ;
+        height: 45px ;
+        border-radius: 2px ;
+        font-size: 16px ;
+        padding-left: 10px ;
+        margin-top: 5px ;
+        color: black ;
+    }
+
+    .log-button{
+        width: 85vw ;
+        height: 45px ;
+        cursor: pointer ;
+        background-color: rgb(63,68,238) ;
+        border: none ;
+        border-radius: 2px ;
+        font-size: 18px ;
+        font-weight: 500 ;
+    }
+}

@@ -1,0 +1,326 @@
+.post-button{
+    background: none ;
+    border: none ;
+    cursor: pointer ;
+    font-size: 15px ;
+    display: flex ;
+    justify-content: center ;
+    padding: 15px 20px ;
+    cursor: pointer ;
+    position: relative ;
+    background-color: black ;
+}
+
+.post-buttons{
+    display: grid ;
+    border-bottom: solid rgb(40,43,45) 0.5px  ;
+    grid-template-columns: 1fr 1fr ;
+    width: 598px ;
+    margin-bottom: 10px ;
+    position: fixed ;
+    top: 60px ;
+    z-index: 100 ;
+    margin-top: -2px ;
+}
+
+.post-button:hover{
+    background-color: rgb(24, 24, 24) ;
+}
+
+.post-on{
+    font-weight: bold ;
+}
+
+.post-off{
+    color: rgb(106, 111, 116) ;
+}
+
+.post-show-bar{
+    background-color: rgb(63,68,238) ;
+    height: 6px ;
+    width: 85px ;
+    border-radius: 5px ;
+    position: absolute ;
+    bottom: 0px ;
+    opacity: 0 ;
+}
+
+.js-bar-for-you{
+    opacity: 1 ;
+}
+
+.js-bar-following{
+    opacity: 1 ;
+}
+
+@media(max-width: 884px){
+    .post-buttons{
+        display: grid ;
+        border-bottom: solid rgb(40,43,45) 0.5px  ;
+        grid-template-columns: 1fr 1fr ;
+        width: 100vw ;
+        margin-bottom: 10px ;
+        position: fixed ;
+        top: 60px ;
+        transition: 0s ;
+        background-color: black ;
+        margin-top: -2px ;
+    }
+}
+
+a{
+    display: inline ;
+}
+/*status bar*/
+
+/*.user-stories{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding: 10px ;
+    border-radius: 8px ;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+    margin-bottom: 10px ;
+    z-index: 0 ;
+    width: 575px ;
+    overflow: scroll ;
+    overflow-x: auto ;
+}
+
+.user-stories::-webkit-scrollbar{
+    display: none ;
+}
+
+.all-content{
+    padding: 10px ;
+}*/
+
+.user-stories{
+    display: grid ;
+    grid-auto-flow: column ;
+    grid-auto-columns: 194px ;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+    padding: 10px ;
+    width: 575px ;
+    overflow-x: auto ;
+    margin-left: 14px ;
+    overscroll-behavior-inline: contain ;
+}
+
+.scroller{
+    scroll-snap-type: inline mandatory ;
+    scroll-padding-inline: 1rem ;
+}
+
+.scroller >* {
+    scroll-snap-align: start ;
+}
+
+.story-image, .user-story-img{
+    width: 185px ;
+    height: 380px ;
+    object-fit: cover ;
+    border-radius: 8px ;
+    cursor: pointer ;
+}
+
+.story-holder{
+    position: relative ;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+    border-radius: 8px ;
+    display: flex ;
+    justify-content: center ;
+    margin-right: 8px ;
+}
+
+.story-pp, .story-user-pp{
+    width: 80px ;
+    height: 80px ;
+    border-radius: 50% ;
+    object-fit: cover ;
+    position: absolute ;
+    left: 4px ;
+    top: 4px ;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+    cursor: pointer ;
+    z-index: 11 ;
+}
+
+.story-cover{
+    position: absolute ;
+    background-color: rgba(0, 0, 0, 0.2) ;
+    top: 0px ;
+    border-radius: 8px ;
+    width: 185px ;
+    height: 380px ;
+    cursor: pointer ;
+}
+
+.story-holder:hover .story-cover{
+    z-index: 0 ;
+    background-color: rgba(0, 0, 0, 0) ;
+}
+.story-holder:hover .story-image{
+    z-index: 1 ;
+}
+
+.story-cover:active{
+    z-index: 0 ;
+    background-color: rgba(0, 0, 0, 0) ;
+}
+
+.add-story-button{
+    position: absolute ;
+    bottom: 20px ;
+    z-index: 2 ;
+}
+
+.stories-head{
+    font-weight: bold ;
+    font-size: 20px ;
+    padding: 14px ;
+}
+
+.zommed-story{
+    position: fixed ;
+    top: 10vh ;
+    width: 600px ;
+    height: 80vh ;
+    object-fit: cover ;
+    border-radius: 20px ;
+}
+
+.close-overlay-button{
+    position: fixed ;
+    top: 4vh ;
+    right: 1vw ;
+    cursor: pointer ;
+    background-color: white ;
+    border: none ;
+    width: 2rem ;
+    height: 2rem ;
+    border-radius: 50% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.close-overlay-button img{
+    width: 1rem ; 
+}
+
+.close-overlay-button:hover{
+    background-color: rgb(236, 236, 236) ;
+}
+
+.delete-story{
+    position: fixed ;
+    top: 10vh ;
+    right: 1vw ;
+    cursor: pointer ;
+    background: none ;
+    border: none ;
+    font-size: 15px ;
+}
+
+.delete-story img{
+    width: 2rem ;
+}
+
+.add-story-symbol img{
+    width: 2rem ;
+}
+
+.add-story-symbol{
+    height: 3rem ;
+    width: 3rem ;
+    background-color: rgb(63,68,238);
+    border-radius: 1.5rem ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    cursor: pointer ;
+}
+
+.add-story-symbol:hover{
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.5) ;
+}
+
+@media(min-width: 1052px){
+    .user-stories::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+@media(max-width: 884px){
+    .zommed-story{
+        position: fixed ;
+        top: 10vh ;
+        width: 80vw ;
+        height: 80vh ;
+        object-fit: cover ;
+        border-radius: 20px ;
+    }
+
+    .stories-head{
+        font-weight: bold ;
+        font-size: 16px ;
+        padding: 14px ;
+    }
+
+    .user-stories{
+        display: grid ;
+        grid-auto-flow: column ;
+        grid-auto-columns: 152px ;
+        box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+        padding: 10px ;
+        width: 100vw ;
+        overflow-x: auto ;
+        margin-left: 0px ;
+        overscroll-behavior-inline: contain ;
+    }
+    
+    .all-content{
+        padding-left: 0px ;
+    }
+
+    .story-image, .user-story-img{
+        width: 145px ;
+        height: 280px ;
+        object-fit: cover ;
+        border-radius: 8px ;
+        cursor: pointer ;
+    }
+    
+    .story-holder{
+        position: relative ;
+        box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+        border-radius: 8px ;
+        display: flex ;
+        justify-content: center ;
+        margin-right: 8px ;
+    }
+    
+    .story-pp, .story-user-pp{
+        width: 80px ;
+        height: 80px ;
+        border-radius: 50% ;
+        object-fit: cover ;
+        position: absolute ;
+        left: 4px ;
+        top: 4px ;
+        box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4) ;
+        cursor: pointer ;
+        z-index: 11 ;
+    }
+    
+    .story-cover{
+        position: absolute ;
+        background-color: rgba(0, 0, 0, 0.2) ;
+        top: 0px ;
+        border-radius: 8px ;
+        width: 145px ;
+        height: 280px ;
+        cursor: pointer ;
+    }
+}

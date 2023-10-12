@@ -1,0 +1,36 @@
+.home-app{
+    position: relative ;
+}
+
+.overlay-container{
+    position: absolute ;
+    bottom: 0px ;
+    left: 0px ;
+    right: 0px ;
+    top: 0px ;
+    background-color: rgba(0, 0, 0, 0.8) ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    z-index: -100 ;
+    opacity: 0 ;
+}
+
+.overlay-on{
+    z-index: 109 ;
+    opacity: 1 ;
+}
+
+.js-post-media{
+    width: 400px ;
+}
+
+.post-profile-picture{
+    width: 80px ;
+    height: 80px ;
+}
+
+.opacity{
+    opacity: 0 ;
+    z-index: -100 ;
+}

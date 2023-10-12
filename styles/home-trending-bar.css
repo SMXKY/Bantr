@@ -1,0 +1,196 @@
+body{
+    padding-bottom: 2rem ;
+}
+
+.all-content{
+    display: inline ;
+}
+
+.trending{
+    position: fixed ;
+    top: 0px ;
+    bottom: 0px ;
+    padding-top: 60px ;
+    border-left: solid rgb(40,43,45) 0.5px ;
+    z-index: 101 ;
+    padding-left: 1rem ;
+}
+
+.all-content{
+    display: flex ;
+    position: relative ;
+}
+
+.trending-head{
+    font-size: 20px ;
+    font-weight: bold ;
+    margin-bottom: 1rem ;
+}
+
+.trend-link{
+    text-decoration: none ;
+    color: rgb(63,68,238) ;
+}
+
+.trend-link:hover{
+    color: white ;
+}
+
+.trend-template{
+    display: flex ;
+    align-items: center ;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem ;
+    margin-bottom: 1rem ;
+}
+
+.tweet-button{
+    position: fixed ;
+    cursor: pointer ;
+    width: 3rem ;
+    height: 3rem ;
+    border-radius: 1.5rem ;
+    bottom: 1rem ;
+    margin-left: 1rem ;
+    border: none ;
+    z-index: 120 ;
+    background-color: rgb(63,68,238) ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.tweet-button:hover{
+    background-color: rgb(50, 56, 245) ;
+}
+
+.tweet-button img{
+    width: 2rem ;
+}
+
+.post-a-tweet-box{
+    position: fixed ;
+    top: 10rem ;
+    background-color: black ;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.15) ;
+    padding: 1rem ;
+    border-radius: 5px ;
+}
+
+.post-a-tweet-pp{
+    width: 4rem ;
+    height: 4rem ;
+    border-radius: 2rem ;
+    margin-right: 1rem ;
+}
+
+.write-tweet-header{
+    display: flex ;
+    align-items: center ;
+    margin-bottom: 0rem ;
+}
+
+.post-a-tweet-input, .tag-input{
+    flex: 1 ;
+    height: 1.9rem ;
+    border: none ;
+    color: white ;
+    font-size: 15px ;
+    background-color: black ;
+    border: solid rgb(40,43,45) 0.5px ;
+    padding: 10px ;
+    border-radius: 4px ;
+}
+
+.post-a-tweet-input:focus, .tag-input:focus{
+    outline: none ;
+    border-color: rgb(50, 56, 245) ;
+}
+
+.input-tweet-img{
+    position: absolute ;
+    opacity: 0 ;
+}
+
+.write-tweet-footer{
+    display: flex ;
+    padding-top: 0.2rem ;
+    padding-bottom: 0.5rem ;
+}
+
+.upload-photo-label{
+    padding: 0.5rem 1rem ;
+    border-radius: 4px ;
+    background-color: rgb(50, 56, 245) ;
+    cursor: pointer ;
+}
+
+.write-tags{
+    display: flex ;
+    padding: 0.6rem 0rem ;
+}
+
+.tag-button, .submit-the-tweet{
+    margin-left: 4px ;
+    padding: 0.41rem 1rem ;
+    border: none ;
+    cursor: pointer ;
+    background-color: rgb(50, 56, 245) ;
+    border-radius: 4px ;
+}
+
+.js-tag-holder{
+    height: 16px ;
+    display: flex ;
+    align-items: center ;
+}
+
+.tag-check{
+    margin-right: 8px ;
+    color: rgb(50, 56, 245) ;
+}
+
+.submit-the-tweet{
+    margin-left: 0px ;
+}
+
+@media(max-width: 884px){
+    .tweet-button{
+        position: fixed ;
+        cursor: pointer ;
+        width: 3rem ;
+        height: 3rem ;
+        border-radius: 1.5rem ;
+        bottom: 4rem ;
+        margin-left: 0rem ;
+        right: 1rem ;
+        border: none ;
+        z-index: 120 ;
+        background-color: rgb(63,68,238) ;
+        display: flex ;
+        justify-content: center ;
+        align-items: center ;
+    }
+
+    .trending{
+        position: relative ;
+        padding-top: 1rem ;
+        border-left: solid rgb(40,43,45) 0.5px ;
+        z-index: 0 ;
+        padding-left: 1rem ;
+        display: flex ;
+        flex-direction: column ;
+        align-items: center ;
+        padding-bottom: 2rem ;
+    }
+    
+    .all-content{
+        flex-direction: column ;
+    }
+
+    .trending-head{
+        text-align: center ;
+    }
+}
+

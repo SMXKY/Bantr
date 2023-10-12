@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-nav-bar.css">
+    <link rel="stylesheet" href="styles/home-post-bar.css">
+    <link rel="stylesheet" href="styles/home-post.css">
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/home-trending-bar.css">
+</head>
+<body>
+    <div class="js-app home-app">
+        <div class="logo">
+            <a href="home.html" class="logo-link" target="_blank">
+                <img src="images and Icons/app-logo.png" alt="" width="100px">
+            </a>
+            <header class="header">
+                Home
+            </header>
+        </div>
+        <nav class="user-navigation">
+            <a href="utility-pages/user-profile.html" class="nav-link account" target="_blank">
+                <img src="images and Icons/Icons/generic-profile-picture.jpg" alt="account" class="nav-link-img-profile">
+                <p class="link-label js-page-on">Account</p>
+            </a>
+
+            <a href="home.html" class="nav-link" target="_blank">
+                <img src="images and Icons/Icons/home-icon.png" alt="home" class="nav-link-img">
+                <p class="link-label">Home</p>
+            </a>
+
+            <a href="utility-pages/trending.html" class="nav-link" target="_blank">
+                <img src="images and Icons/Icons/hash-icon.png" alt="mentions" class="nav-link-img">
+                <p class="link-label">Trending</p>
+            </a>
+
+            <a href="utility-pages/search.html" class="nav-link" target="_blank">
+                <img src="images and Icons/Icons/search-icon.png" alt="search" class="nav-link-img">
+                <p class="link-label">Search</p>
+            </a>
+
+            <a href="utility-pages/settings.html" class="nav-link" target="_blank">
+                <img src="images and Icons/Icons/settings-icons.png" alt="settings" class="nav-link-img">
+                <p class="link-label">Settings</p>
+            </a>
+        </nav>
+        <section class="content">
+            <div class="all-post">
+                <div class="post-buttons">
+             
+                    <button class="js-see-forYou-post post-button">For you
+                        <div class="post-show-bar bar-for-you"></div>
+                    </button>
+                
+                
+                    <button class="js-see-followed-post post-button">Following
+                        <div class="post-show-bar bar-following"></div>
+                    </button>
+                    
+                </div>
+
+                <div class="all-content">
+                    <div class="left">
+                        <div class="stories-head">Stories</div>
+                        <div class="js-all-stories user-stories scroller">
+                            <div class="js-story-template-user js-story story-holder">
+                            </div>
+                        </div>
+        
+                        <div class="js-post-content post-content">
+                            
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <section class="trending">
+                            <p class="trending-head">Trending</p>
+                            <div class="js-treding-bar trending-box">
+                    
+                            </div>
+                        </section>
+
+                        <button class="js-post-a-tweet tweet-button"><img src="images and Icons/Icons/add-icon.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="add-a-comment">
+            
+        </div>
+
+    </div>
+    <div class="overlay-container js-overlay">
+        
+    </div>
+    
+    <script src="scripts/home.js" type="module"></script>
+</body>
+</html>
